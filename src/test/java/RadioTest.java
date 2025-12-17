@@ -15,6 +15,17 @@ import org.junit.jupiter.api.Test;
          Assertions.assertEquals(expected, actual);
      }
 
+
+     @Test
+     public void testCount() {
+         Radio radio = new Radio(20);
+         radio.setCurretStation(15);
+
+         int expected = 15;
+         int actual = radio.getCurretStation();
+         Assertions.assertEquals(expected, actual);
+     }
+
      @Test
      public void shouldSetToMinStation() {
          Radio radio = new Radio();
